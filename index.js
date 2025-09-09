@@ -67,7 +67,6 @@ function FaixaEtaria() {
 FaixaEtaria();
 
 //Exercício 3
-//Exercício 3
 function calcularMediaPonderada() {
     const notaLab = parseFloat(prompt("Digite a nota da atividade prática em laboratório: "));
     const notaSemestre = parseFloat(prompt("Digite a nota da prova do semestre: "));
@@ -278,4 +277,5 @@ function converterData() {
 }
 
 converterData();
+
 
