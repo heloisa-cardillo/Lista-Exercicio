@@ -66,6 +66,42 @@ function FaixaEtaria() {
 
 FaixaEtaria();
 
+//Exercício 3
+//Exercício 3
+function calcularMediaPonderada() {
+    const notaLab = parseFloat(prompt("Digite a nota da atividade prática em laboratório: "));
+    const notaSemestre = parseFloat(prompt("Digite a nota da prova do semestre: "));
+    const notaTeorico = parseFloat(prompt("Digite a nota do trabalho teórico: "));
+
+    const pesoLab = 2;
+    const pesoSemestre = 5;
+    const pesoTeorico = 3;
+    const somaDosPesos = pesoLab + pesoSemestre + pesoTeorico;
+
+    const media = ((notaLab * pesoLab) + (notaSemestre * pesoSemestre) + (notaTeorico * pesoTeorico)) / somaDosPesos;
+
+    let classificacao;
+    if (media > 9 && media <= 10) {
+        classificacao = 'A';
+    } else if (media > 8 && media <= 9) {
+        classificacao = 'B';
+    } else if (media > 7 && media <= 8) {
+        classificacao = 'C';
+    } else if (media > 6 && media <= 7) {
+        classificacao = 'D';
+    } else if (media > 5 && media <= 6) {
+        classificacao = 'E';
+    } else if (media >= 0 && media <= 5) {
+        classificacao = 'F';
+    } else {
+        classificacao = 'Média inválida';
+    }
+
+    console.log(`\nA média do aluno é = ${media.toFixed(2)} e a sua classificação é ${classificacao}`);
+}
+
+calcularMediaPonderada();
+
 
 //Exercício x
 function Frete() {
@@ -242,3 +278,4 @@ function converterData() {
 }
 
 converterData();
+
